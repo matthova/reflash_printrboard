@@ -5,7 +5,7 @@ Download the latest printrboard firmware from [here](https://github.com/Printrbo
 For the printrbot simple metal I used the file RevF4-v1-SimpleMetal.hex
 
 Download avrdude
-Connect a usbasp or other programmer cable to the SPI pins on the bottom of the printrboard. You don't need to use jumpers. You don't need to hit the reset button.
-Type in the following to terminal:
-avrdude -c usbasp -p at90usb1286 -U lfuse:w:0xDE:m -U hfuse:w:0x9B:m -U efuse:w:0xF0:m
-avrdude -c usbasp -p at90usb1286 -U flash:w:RevF4-v1-SimpleMetal.hex:i
+Connect a usbasp or other programmer cable to the SPI pins on the bottom of the printrboard. You don't need to use jumpers. You don't need to hit the reset button.  
+Type in the following to terminal:  
+avrdude -c usbasp -p at90usb1286 -U lfuse:w:0xDE:m -U hfuse:w:0x9B:m -U efuse:w:0xF0:m  
+avrdude -c usbasp -p at90usb1286 -U flash:w:RevF4-v1-SimpleMetal.hex:i  
